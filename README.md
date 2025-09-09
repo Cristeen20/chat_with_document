@@ -44,5 +44,5 @@ python app.py
 1. Start both **frontend and backend**.
 2. Open the frontend in your browser (Streamlit provides a local URL).
 3. Click the **Upload** button to upload documents/files.  
-   *(Insert screenshot here once available)*
+   *![alt text](image.png)*
 4. After uploading, start a **chat about the uploaded topic**.

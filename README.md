@@ -1,9 +1,11 @@
-# Project Setup and Usage
+## Chat with document
 
 ## Setup
 
 1. **Create a virtual environment**
+```
 python -m venv venv
+```
 
 
 2. **Activate the virtual environment**
@@ -17,20 +19,23 @@ python -m venv venv
   ```
 
 3. **Install dependencies**
+```
 pip install -r requirements.txt
-
+```
 
 ---
 
 ## Running the Applications
 
 ### Frontend (Streamlit)
+```
 streamlit run run.py
-
+```
 
 ### Backend (FastAPI/Flask)
+```
 python app.py
-
+```
 
 ---
 

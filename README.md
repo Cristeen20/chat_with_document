@@ -41,8 +41,23 @@ python app.py
 
 ## Usage
 
-1. Start both **frontend and backend**.
-2. Open the frontend in your browser (Streamlit provides a local URL).
-3. Click the **Upload** button to upload documents/files.  
-   *![UI](screenshots/UI.png)*
-4. After uploading, start a **chat about the uploaded topic**.
+1. Create a **.env** file in the project root with the following content:
+```
+OPENAI_API_KEY=your_api_key_here
+```
+
+2. Ensure your application loads environment variables from `.env`.  
+For Python, install and use **python-dotenv** (already in requirements if needed):
+```
+from dotenv import load_dotenv
+load_dotenv()
+```
+
+3. Start both **frontend and backend**.
+
+4. Open the frontend in your browser (Streamlit provides a local URL).
+
+5. Click the **Upload** button to upload documents/files.  
+*![UI](screenshots/UI.png)*
+
+6. After uploading, start a **chat about the uploaded topic**.

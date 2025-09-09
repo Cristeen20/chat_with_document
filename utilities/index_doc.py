@@ -14,7 +14,7 @@ embedder = LlamaEmbedder()
 Settings.embed_model = embedder
 Settings.llm =  llm
 
-def index_document(file_path):
+def index_document(file_path,uu_id="000"):
     """
     Index a document for search.
     Args:
@@ -33,7 +33,7 @@ def index_document(file_path):
     
     
     
-    filename_fn = lambda file_path: {"file_path":file_path}
+    filename_fn = lambda file_path: {"file_path":file_path, "uu_id":uu_id}
     documents = SimpleDirectoryReader(
                             dest_folder,
                             file_metadata = filename_fn
